@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #111;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.paddle {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background: #fff;
+}
+
+#player1 {
+    left: 10px;
+    top: 200px;
+}
+
+#player2 {
+    right: 10px;
+    top: 200px;
+}
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    top: 240px;
+    left: 390px;
+}
+
+#touchControls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+#touchControls button {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#touchControls button:active {
+    background: #666;
+}
